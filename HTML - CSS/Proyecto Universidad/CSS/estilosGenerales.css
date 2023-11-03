@@ -1,0 +1,38 @@
+header{
+    margin-bottom: 30px;
+    height: 50px;
+}
+footer{
+    background-color: #163172;
+    text-align: center;
+}
+.boton-menu{
+    width: 200px;
+    border-radius: 25px;
+    padding: 8px;
+    margin-left: 15px;
+    border: none;
+    height: 80%;
+    background-color: rgb(239, 245, 245);
+}
+
+.boton-menu:active{
+    background-color: rgb(235, 100, 64);
+}
+#menu{
+    display:flex; 
+    height: 100%;
+    background-color: #163172;
+    gap: 2.5px;
+    align-items: center;
+}
+
+a#perfil{
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+a#perfil button{
+    border-radius: 45%;
+    width: 50px;
+}

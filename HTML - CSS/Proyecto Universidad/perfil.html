@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <link rel="stylesheet" href="CSS/estilosGenerales.css">
+        <link rel="stylesheet" href="CSS/estilosPerfil.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="contenedor">
+            <header>
+                <nav id="menu"> 
+                    <button class="boton-menu" title="Transacciones"> <span class="material-icons">credit_score</span> </button>
+                    <button class="boton-menu" title="Stock"> <span class="material-icons">bar_chart</span> </button>
+                    <button class="boton-menu" title="Ayuda"> <span class="material-icons">help</span></button>
+                    <a id="perfil" href="index.html" target="_self">
+                        <button class="boton-menu" title="Inicio"> <span class="material-icons">home</span></button>
+                    </a>
+                </nav>
+            </header>
+
+            <main>
+                <div id="izquierda">
+                    <div id="icono" class="organizacionPerfil">
+                        <img src="imagenes/icono.jpg" alt="" width="150px">
+                        <p> Nombre de Usuario </p>
+                    </div>
+
+                    <div id="datosPago" class="organizacionPerfil">
+                        <h3> Datos del pago: </h3>
+                        <form>
+    
+                            <div>
+                                <label for="iTarjeta"> Numero de cuenta: (Incluir "-") </label> <br>
+                                <input type="text" id="iTarjeta" name="Tarjeta" placeholder="0000-1111-2222-3333" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" minlength="1" maxlength="20"> <br>
+                                <label for="iTitular"> Titular: </label> <br>
+                                <input type="text" id="iTitular" name="Titular" placeholder="Ricardo Arjona" minlength="1"> <br>
+                            </div>
+                            <div> 
+                                <label for="opcionesBanco"> Seleccione su banco: </label> <br>
+                                <select id="opcionesBanco" name="OpcionBanco">
+                                    <option value="Provincia"> Provincia </option>
+                                    <option value="Macro"> Macro </option>
+                                    <option value="BBVA"> BBVA </option>
+                                    <option value="Supervielle"> Supervielle </option>
+                                    <option value="Galicia"> Galicia </option>
+                                    <option value="Santander"> Santander </option>
+                                    <option value="ICBC"> ICBC </option>
+                                </select>
+                            </div>
+                            
+    
+                            <br>
+                            <input type="reset" value="Resetear">
+                            <input type="submit" value="Guardar" onclick="alert('Se han actualizado los datos')">
+                            <input type="submit" value="Depositar ganancias" onclick="alert('Se ha depositado el dinero en su cuenta')">
+    
+    
+                        </form>
+                        
+                    </div>
+                    <div id="preferencias" class="organizacionPerfil">
+                        <h3> Seleccione sus preferencias: </h3>
+                        <form>
+    
+                            <div id="mostrarGrafico">
+                                <label for="iGrafico"> Seleccione los graficos: </label> <br>
+                                <input type="checkbox" id="iGrafico" name="grafico01"> Grafico 1 <br>
+                                <input type="checkbox" id="iGrafico" name="grafico02"> Grafico 2 <br>
+                                <input type="checkbox" id="iGrafico" name="grafico03"> Grafico 3 <br>
+                            </div>
+                            
+                            <br>
+    
+                            <div id="colorDeFondo">
+                                <label for="iFondo"> Seleccione el color de fondo: </label> <br>
+                                <input id="iFondo" type="color"> <br>
+                            </div>
+    
+                            <br>
+                            <input type="reset" value="Borrar Seleccion">
+                            <input type="submit" onclick="alert('Se han actualizado los datos')">
+                        </form>
+                        
+                    </div> 
+                </div>
+                
+
+                <div id="derecha" class="organizacionPerfil">
+                    <h3> Actualizar datos: </h3>
+                    <form>
+
+                        <div>
+                            <label for="iNombre"> Ingrese nuevo nombre </label> <br>
+                            <input type="text" id="iNombre" name="Nombre"> <br>
+                            
+                            <label for="iApellido"> Apellido </label> <br>
+                            <input type="text" id="iApellido" name="Apellido"> <br>
+    
+                            <label for="iPassword"> Ingrese nueva contraseña </label> <br>
+                            <input type="password" id="iPassword" name="Contrasenia"><br>
+                            
+                            <label for="fPerfilFoto"> Seleccione su foto de perfil </label><br>
+                            <input type="file" id="fPerfilFoto"> <br>
+                        
+                        </div>
+                        <div id="tipoCuenta">
+                            <label for="opcionesCuenta"> Seleccione el tipo de cuenta: </label> <br>
+                            <select id="opcionesCuenta" name="OpcionCuenta">
+                                <option value="administrador"> Administrador </option>
+                                <option value="empleado"> Empleado </option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="iEmail"> Email: </label> <br>
+                            <input type="email" id="iEmail" name="Email" placeholder="ejemplo@homemail.com," size="25" required> <br>
+                            <label for="iTelefono"> Telefono: (Incluir "-") </label> <br>
+                            <input type="tel" id="iTelefono" name="Telefono" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="1" maxlength="12" required> <br>
+                            <label for="iNacimiento"> Fecha de nacimiento: </label> <br>
+                            <input type="date" id="iNacimiento" name="Nacimiento" min="1930-01-01" max="2022-12-30" required> <br>
+                        </div>
+
+                        <br>
+                        <input type="reset" value="Resetear">
+                        <input type="submit" value="Guardar" onclick="alert('Se han actualizado los datos')">
+
+
+                        </form>
+                      
+                </div>
+            
+                  
+                   
+
+
+
+
+                
+                
+            </main>
+
+
+
+
+            <footer>
+                Este es el footer
+            </footer>
+        </div>
+    </body>
+</html>
