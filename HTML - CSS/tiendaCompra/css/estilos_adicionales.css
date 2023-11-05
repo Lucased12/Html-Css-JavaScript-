@@ -1,0 +1,133 @@
+/***********************************************
+
+ Autores: Lucas Ducamp - Franco Agustin Muñoz Cartagena
+
+***********************************************/
+
+/* ORGANIZAR LAS DECLARACIONES EN BLOQUES*/
+header{
+    background-color: beige;
+    margin-bottom: 40px;
+    height: 50px;
+}
+footer{
+    text-align: center;
+}
+/* ESTILOS GENERALES*/
+#contenedor-general{ /*contiene todo el body*/
+    margin: 20px;
+}
+#contenedor-central{ /*contiene el aside y el main*/
+    margin-bottom: 10px;
+}
+/* ESTILOS DE PLANTILLA*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    gap: 20px;
+}
+.plantilla-item{
+    display: flex;
+    justify-content: space-around;
+}
+
+.plantilla-izq{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.plantilla-izq button {
+  background-color: cadetblue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 0px;
+}
+
+.medios-pago{
+  color: lightskyblue;
+  font-weight: bold;
+}
+.precio{
+    font-size:150%;
+}
+
+/* ESTILOS DE BARRA DE NAVEGACIÓN */
+#menu-principal{
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+  
+#btn-perfil{
+    background-color: blue;
+    border: none;
+    border-radius: 50%;
+    padding: 7px;
+    margin-right: auto;
+    margin-left: 10px;
+}
+  
+#btn-carrito{
+    background-color: green;  
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: none;
+    margin-left: auto;
+    margin-right: 10px;
+}
+  
+.boton-menu{
+    background-color: rgb(48, 95, 97);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase; 
+}
+  
+.boton-menu:nth-child(2){
+    margin-left: 500px;
+}
+  
+.boton-menu:hover{
+    background-color: orange;
+    transition: all .5s;
+}
+
+/* ESTILOS DE ASIDE*/
+.barra-secundaria{
+    background-color: cadetblue;
+    margin-left: auto;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.plantilla-secundaria{
+  height: 50px;
+  width: 150px;
+  background-color: beige;
+}
+
+/* ESTILOS DE ...*/
+@media screen and (max-width: 600px){
+    .barra-secundaria{
+      display: none;
+    }
+}
+@media screen and (max-width: 1100px){
+    #menu-principal{
+      gap: 0px;
+    }
+  
+    .boton-menu:nth-child(2){
+      margin-left: 0px;
+    }
+}
