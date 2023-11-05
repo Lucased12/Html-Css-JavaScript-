@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Html</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Lucas Ducamp</h1>
+        <p>Desarrollador Web Front-End</p>
+    </header>
+
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Soy un estudiante de programación de la UTN.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="grid">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <div class="overlay">
+                <p>Ejemplo de HTML</p>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <div class="overlay">
+                <p>Ejemplo de CSS</p>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Proyecto 3</h3>
+            <div class="overlay">
+                <p>Ejemplo de Javascript</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactPersonal">
+        <h2>Contacto Personal</h2>
+        <p>Email: Leducamp@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-ducamp/">Lucas Ducamp</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto </h2>
+        <form id="contact-form">
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    
+
+    <footer>
+        <h3>Este es un ejemplo de lo que puedo hacer con HTML</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
